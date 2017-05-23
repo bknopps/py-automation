@@ -19,3 +19,4 @@ def send_email(mfrom, mto, msubject, message, smtpserver):
     mssg = headers + message
     session = smtplib.SMTP(smtpserver)
     smtpresult = session.sendmail(mailFrom, mailTo, mssg)
+
